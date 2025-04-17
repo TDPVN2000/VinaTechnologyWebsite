@@ -1,0 +1,607 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body,
+html {
+  font-family: "Nexa";
+  line-height: 1.6;
+  color: #333;
+  background-color: white;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden; /* xóa bỏ trạng thái có thanh scoll ngang khi F12 */
+  width: 100%;
+}
+
+/* ====================== HEADER ====================== */
+.custom-header-home {
+  background: url("/resources/images/bg.jpeg") no-repeat center center/cover;
+  height: 56.938rem;
+  color: white;
+  justify-content: center;
+}
+
+.custom-header-home .drawer-toggle {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  color: #ffffff;
+}
+
+.custom-header-home .nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+}
+
+.custom-header-home .nav .dropdown-icon {
+  content: url("/resources/images/ic_dropdown.svg");
+}
+
+/* ====================== ABOUT SECTION ====================== */
+.about-section {
+  display: flex;
+  width: 100%;
+  background-color: #f9f9f9;
+  overflow: hidden;
+}
+
+.empty-left {
+  width: 50%;
+}
+
+.about-image {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+}
+
+#style-title-vina {
+  position: absolute;
+  top: 6rem;
+  left: 21.75rem;
+  font-size: 2.75rem;
+}
+
+.about-section .about-container {
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+
+.about-section .about-content {
+  position: absolute;
+  left: 348px;
+  bottom: 67px;
+  background-color: white;
+  border-radius: 16px;
+  padding: 2.5rem 2rem;
+  width: 810px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  background-image: url("/resources/images/bg_sun.svg");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
+.about-section h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.about-section p {
+  font-size: 1.25rem;
+  color: #2b323bcc;
+}
+
+.style-core-products {
+  background-color: #fbab2e;
+  display: inline;
+  font-size: 20px;
+  color: #ffffff !important;
+  font-weight: 400;
+  padding: 2px;
+}
+
+.about-section .core-products {
+  text-align: left;
+  margin-bottom: 2rem;
+  margin-top: 24px;
+}
+
+.about-section .core-products li {
+  margin-bottom: 0.5rem;
+  margin-left: 32px;
+  color: #2b323bcc;
+}
+
+.about-section .learn-more {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #ee1b24;
+  color: white;
+  text-decoration: none;
+  border-radius: 16px;
+  margin-top: 24px;
+}
+
+/* ====================== Operation Section ====================== */
+.operation-section {
+  padding: 4rem 2rem;
+  background-color: white;
+  text-align: center;
+}
+
+.operation-section img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+/* ====================== Product Photos Section ====================== */
+.product-section {
+  padding: 7.563rem 2rem;
+  text-align: center;
+}
+
+.product-section img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.product-section h2 {
+  font-size: 2.75rem;
+  color: #2b323b;
+  font-weight: 700;
+}
+
+.product-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product-gallery img {
+  margin-top: 2.5rem;
+}
+
+/* ====================== Vision, Mission, Values Section ====================== */
+.values-section {
+  padding: 6.25rem 21.75rem;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.values-section img {
+  margin-bottom: 1rem;
+}
+
+.values-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.line {
+  width: 1px;
+  background-color: #2b323b1a;
+  height: 14rem;
+  flex-grow: 1;
+  margin: 0 2rem;
+}
+
+.value-item {
+  width: 30%;
+}
+
+.value-item:last-child {
+  border-right: none;
+}
+
+.value-item h3 {
+  font-size: 2.25rem;
+  color: #2b323bb2;
+}
+
+.value-item p {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  color: #2b323b;
+}
+
+/* ====================== Customer Satisfaction Section ====================== */
+.satisfaction-section {
+  padding: 12.5rem 0rem;
+  background-image: url("/resources/images/bg_satisfaction.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+}
+
+.content {
+  font-size: 2.75rem;
+  line-height: 3.5rem;
+}
+
+.sub-content {
+  margin-top: 1.5rem;
+}
+
+.tag-content {
+  font-size: 3rem;
+  background-color: #fbab2e;
+  padding: 1.25rem 1.5rem;
+  text-transform: uppercase;
+  margin-top: 5rem;
+  display: inline-block;
+}
+
+/* ====================== Partners Section ====================== */
+.partners-section {
+  padding: 7.5rem 2rem;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.partners-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.logo_row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.logo_row img {
+  vertical-align: middle;
+  display: inline-block;
+  margin: 0 2.5rem;
+  max-height: 5.375rem;
+  width: auto;
+}
+
+.partners-logos img {
+  max-height: 5.375rem; /* 86px */
+  width: auto; /* Maintain aspect ratio */
+}
+
+/* ====================== Certifications Section ====================== */
+.certifications-section {
+  padding: 6.25rem 0; /* 100px */
+  text-align: center;
+}
+
+.certifications-container {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem; /* 24px */
+}
+
+.certification-item {
+  text-align: center;
+}
+
+.certification-item p {
+  margin-bottom: 1.25rem; /* 20px */
+  font-size: 1.25rem; /* 16px */
+  color: #ee1b24;
+  font-weight: 850;
+}
+
+.certifications-container img {
+  width: 18.75rem; /* 300px */
+}
+
+@media (max-width: 768px) {
+  .certifications-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .certifications-container img {
+    width: 100%;
+    max-width: 18.75rem;
+  }
+
+  .product-section h2 {
+    font-size: 2.5rem;
+    color: #2b323b;
+    font-weight: 700;
+  }
+
+  .product-section {
+    padding: 0rem 2rem;
+    text-align: center;
+  }
+}
+
+/* ====================== Responsive Styles ====================== */
+@media (max-width: 1200px) {
+  /* Vision, Mission, Values Section */
+  .values-section {
+    padding: 6.25rem 2rem !important;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+
+  .logo_row img {
+    max-height: 5.375rem;
+    width: auto;
+    margin: 0 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .custom-header-home {
+    background: url("/resources/images/bg.jpeg") no-repeat center center/cover;
+    height: 30rem;
+    color: white;
+    justify-content: center;
+  }
+
+  /* VISION MISSION, VALUES SECTION */
+  .values-section {
+    padding: 3.125rem 2rem !important;
+    background-color: #f9f9f9;
+    text-align: center;
+    margin-top: 5rem;
+  }
+
+  .values-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .line {
+    display: none;
+  }
+
+  .value-item h3 {
+    font-size: 1.5rem !important;
+    color: #2b323bb2;
+  }
+
+  .value-item p {
+    margin-top: 1rem;
+    font-size: 1.25rem !important;
+    color: #2b323b;
+  }
+
+  /* ABOUT SECTION */
+  .about-section {
+    height: 500px;
+  }
+
+  .about-image img {
+    height: 500px;
+  }
+
+  .about-section .about-content {
+    position: absolute;
+    left: 0rem;
+    bottom: 0rem;
+    top: 0rem;
+    background-color: white;
+    border-radius: 0rem;
+    width: 450px;
+    height: auto;
+    background-image: url("/resources/images/bg_sun.svg");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+  }
+
+  .about-section p {
+    font-size: 0.8125rem;
+    color: #2b323bcc;
+  }
+
+  .style-core-products {
+    background-color: #fbab2e;
+    display: inline;
+    font-size: 20px;
+    color: #ffffff !important;
+    font-weight: 400;
+    padding: 2px;
+  }
+
+  .about-section .core-products {
+    text-align: left;
+    margin-bottom: 0rem;
+    margin-top: 2px;
+  }
+
+  .about-section .core-products li {
+    margin-bottom: 0.5rem;
+    margin-left: 32px;
+    color: #2b323bcc;
+    font-size: 1rem;
+  }
+
+  #style-title-vina {
+    display: none;
+  }
+
+  .about-section .learn-more {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #ee1b24;
+    color: white;
+    text-decoration: none;
+    border-radius: 1rem;
+    margin-top: 0.5rem;
+  }
+
+  /* CUSTOMER SATISFACTION SECTION */
+  .satisfaction-section {
+    padding: 3rem 0rem;
+    background-image: url("/resources/images/bg_satisfaction.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+  }
+
+  .content {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+  }
+
+  .sub-content {
+    margin-top: 0.5rem;
+  }
+
+  .tag-content {
+    font-size: 2.5rem;
+    background-color: #fbab2e;
+    padding: 0rem 1rem;
+    text-transform: uppercase;
+    margin-top: 2rem;
+    display: inline-block;
+  }
+
+  .logo_row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo_row img {
+    max-height: 4rem;
+  }
+
+  .partners-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .logo_row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+  }
+
+  .logo_row img {
+    max-height: 5.375rem;
+    width: auto;
+    margin: 0 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .partners-section {
+    padding: 2rem 2rem;
+    text-align: center;
+    background-color: #f9f9f9;
+  }
+}
+
+@media (max-width: 480px) {
+  .custom-header-home {
+    background: url("/resources/images/bg.jpeg") no-repeat center center/cover;
+    height: 25rem;
+    color: white;
+    justify-content: center;
+  }
+
+  /* Vision, Mission, Values Section */
+  .values-section {
+    padding: 2rem 0rem !important;
+    margin-top: 3rem;
+  }
+
+  .values-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .value-item {
+    margin-bottom: 1.5rem !important;
+    width: calc(100% - 4rem) !important;
+    margin: 0 2rem 1.5rem 2rem !important;
+  }
+
+  .value-item h3 {
+    font-size: 1.75rem !important;
+  }
+
+  .value-item p {
+    font-size: 1rem;
+    margin-top: 0rem !important;
+  }
+
+  .values-section img {
+    margin-bottom: 0rem !important;
+  }
+
+  /* ABOUT SECTION */
+  .about-section .about-content {
+    position: absolute;
+    left: 0rem;
+    bottom: 0rem;
+    top: 0rem;
+    background-color: white;
+    border-radius: 0rem;
+    width: 100%;
+    height: auto;
+    background-image: url("/resources/images/bg_sun.svg");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+  }
+
+  .about-section p {
+    font-size: 0.85rem;
+    color: #2b323bcc;
+  }
+
+  /* CUSTOMER SATISFACTION SECTION */
+  .tag-content {
+    font-size: 1.5rem;
+    background-color: #fbab2e;
+    padding: 0rem 1rem;
+    text-transform: uppercase;
+    margin-top: 2rem;
+    display: inline-block;
+  }
+
+  .content {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .sub-content {
+    margin-top: 0.5rem;
+  }
+
+  .product-section h2 {
+    font-size: 2rem;
+    color: #2b323b;
+    font-weight: 700;
+  }
+}

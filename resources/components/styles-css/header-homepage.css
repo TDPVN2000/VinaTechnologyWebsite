@@ -1,0 +1,252 @@
+.header .container-header {
+  height: 96px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rem 14.688rem;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+}
+
+.nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav ul li {
+  margin-left: 2rem;
+}
+
+.nav ul li a {
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 150px;
+  z-index: 1;
+  border-radius: 12px;
+  padding: 0.25rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown a {
+  padding: 0.5rem 0.75rem;
+  display: block;
+  background-color: #fff;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+  color: #2b323b !important;
+  text-transform: none !important;
+  font-size: 16px !important;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown a:hover {
+  background-color: #fbab2e33;
+}
+
+.nav li:hover .dropdown {
+  display: block;
+}
+
+.dropdown-icon {
+  margin-left: 0.5rem;
+}
+
+/* ====== Language ====== */
+.language-item {
+  display: flex;
+  align-items: center;
+}
+
+.language-item .flag {
+  width: 2rem;
+  height: auto;
+}
+
+.flag {
+  margin-right: 0.5rem;
+}
+
+.dropdown-language {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 9.375rem;
+  z-index: 1;
+  border-radius: 0.75rem;
+  padding: 0.25rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateX(-118px);
+  margin-top: 0.5rem;
+}
+
+.dropdown-language a {
+  padding: 0.5rem 0.75rem;
+  display: block;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s;
+  color: #2b323b !important;
+  text-transform: none !important;
+  font-size: 1rem !important;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-language a:hover {
+  background-color: #fbab2e33;
+}
+
+.language-item.selected {
+  background-color: #fbab2e33;
+}
+
+.language-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.125rem;
+}
+
+.language-item:last-child {
+  margin-bottom: 0;
+}
+
+/* ====================== Responsive Styles ====================== */
+/* Drawer Menu Styles */
+.drawer {
+  display: none; /* Ẩn drawer mặc định */
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  background-color: white;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  padding: 2rem;
+  transition: transform 0.3s ease;
+  transform: translateX(100%); /* Đưa drawer ra ngoài màn hình */
+}
+
+.drawer-toggle i {
+  font-size: 1.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.drawer-toggle {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  color: #000;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 900;
+}
+
+.drawer.open + .overlay {
+  display: block;
+}
+
+.drawer .menu-item {
+  font-size: 16px;
+}
+
+.drawer.open {
+  display: block;
+  transform: translateX(0); /* Đưa drawer vào màn hình */
+}
+
+.close-drawer {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+
+.drawer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.drawer ul li {
+  margin-bottom: 1rem;
+}
+
+.drawer ul li a {
+  text-decoration: none;
+  color: #000;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .header .container-header {
+    padding: 0 2rem;
+    justify-content: space-between;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .drawer {
+    display: none;
+  }
+
+  .drawer-toggle {
+    display: block;
+  }
+}
+
+@media (min-width: 769px) {
+  .drawer {
+    display: none;
+  }
+
+  .drawer-toggle {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .header .container-header {
+    padding: 0 2rem;
+    justify-content: space-between;
+  }
+
+  .drawer-toggle {
+    font-size: 1.2rem;
+  }
+
+  .logo img {
+    width: 15.625rem;
+    height: auto;
+  }
+}

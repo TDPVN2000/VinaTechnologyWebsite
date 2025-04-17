@@ -1,0 +1,91 @@
+<header class="header">
+  <div class="container-header">
+    <div class="logo">
+      <a href="/index.html">
+        <img src="/resources/images/logo.svg" alt="Vina Technology JSC">
+      </a>
+    </div>
+    <!-- Button to open drawer -->
+    <button class="drawer-toggle" onclick="toggleDrawer()">
+      <i class="fa-solid fa-bars-staggered"></i>
+    </button>
+    <nav class="nav">
+      <ul>
+        <li><a href="/resources/pages/about/index.html" class="menu-item" data-menu="about-us"
+            data-i18n="about_us">About
+            Us</a></li>
+        <li>
+          <div style="flex-direction: row; display: flex;">
+            <a href="#" class="menu-item" data-menu="product-services" data-i18n="product_services">Products &
+              Services</a>
+            <img src="/resources/images/ic_dropdown_black.svg" alt="ic_dropdown" class="dropdown-icon">
+          </div>
+          <div class="dropdown">
+            <a href="/resources/pages/product-service/optical-cutting/index.html"
+              data-i18n="optical_material_cutting">Optical
+              material die cutting</a>
+            <a href="/resources/pages/product-service/outsourcing-services/index.html"
+              data-i18n="outsourcing_services">Outsourcing services</a>
+          </div>
+        </li>
+        <li><a href="/resources/pages/contact-us/index.html" class="menu-item" data-menu="contact-us"
+            data-i18n="contact_us">Contact Us</a>
+        </li>
+        <!-- Language -->
+        <li>
+          <a href="#" class="current-flag" onclick="toggleLanguageDropdown(event)">
+            <img src="/resources/images/ic_en.svg" alt="Current Language">
+          </a>
+          <div class="dropdown-language">
+            <a class="language-item" onclick="changeLanguageI18n('vn')">
+              <img src="/resources/images/ic_vn.svg" alt="Vietnamese" class="flag"> Tiếng Việt
+            </a>
+            <a class="language-item selected" onclick="changeLanguageI18n('en')">
+              <img src="/resources/images/ic_en.svg" alt="English" class="flag"> English
+            </a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Drawer Menu -->
+  <div class="overlay" onclick="toggleDrawer()"></div>
+  <div class="drawer">
+    <button class="close-drawer" onclick="toggleDrawer()">✖</button>
+    <ul>
+      <li><a href="/resources/pages/about/index.html" class="menu-item" data-menu="about-us" data-i18n="about_us">About
+          Us</a></li>
+      <li>
+        <div style="flex-direction: row; display: flex;">
+          <a href="#" class="menu-item" data-menu="product-services" data-i18n="product_services"
+            onclick="toggleDropdown(event)">Products & Services</a>
+          <img src="/resources/images/ic_dropdown_black.svg" alt="ic_dropdown" class="dropdown-icon">
+        </div>
+        <div class="dropdown" style="display: none;">
+          <a href="/resources/pages/product-service/optical-cutting/index.html"
+            data-i18n="optical_material_cutting">Optical
+            material die cutting</a>
+          <a href="/resources/pages/product-service/outsourcing-services/index.html"
+            data-i18n="outsourcing_services">Outsourcing services</a>
+        </div>
+      </li>
+      <li><a href="/resources/pages/contact-us/index.html" class="menu-item" data-menu="contact-us"
+          data-i18n="contact_us">Contact Us</a></li>
+      <!-- Language -->
+      <li>
+        <a class="current-flag" onclick="toggleLanguageDropdown(event)">
+          <img src="/resources/images/ic_en.svg" alt="Current Language">
+        </a>
+        <div class="dropdown-language">
+          <a class="language-item" onclick="changeLanguageI18n('vn')">
+            <img src="/resources/images/ic_vn.svg" alt="Vietnamese" class="flag"> Tiếng Việt
+          </a>
+          <a class="language-item selected" onclick="changeLanguageI18n('en')">
+            <img src="/resources/images/ic_en.svg" alt="English" class="flag"> English
+          </a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</header>
