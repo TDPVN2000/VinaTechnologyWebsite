@@ -1,0 +1,468 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body,
+html {
+  font-family: "Nexa";
+  line-height: 1.6;
+  background-color: white;
+  text-rendering: optimizeLegibility;
+  height: 100%;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* ====================== HEADER ====================== */
+.custom-header-about {
+  background-color: #f9f9f9;
+}
+
+/* ====================== MAIN-BODY ====================== */
+.main-body {
+  text-align: center;
+}
+
+/* ====================== ABOUT SECTION ====================== */
+.about-section {
+  background-color: #f8f8f8;
+  text-align: center;
+  padding: 74px 0px 142px 0px;
+  position: relative;
+  clip-path: ellipse(100% 160% at 50% -60%);
+}
+
+.des_about_us {
+  font-size: 1.25rem !important;
+  color: #2b323bcc;
+}
+
+.container-about-section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #2b323b;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 1rem;
+  color: #2b323bb2;
+  line-height: 1.5rem;
+}
+
+/* ====================== WRAPPER ====================== */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+/* ====================== INFO SECTION ====================== */
+.info-section {
+  display: flex;
+  justify-content: center;
+  padding: 7.5rem 0;
+}
+
+.info-box {
+  width: 37.5625rem;
+  background-color: #ffffff;
+  margin-right: 1.4375rem;
+  text-align: left;
+}
+
+.info-box:last-child {
+  margin-right: 0;
+}
+
+.info-box h4 {
+  background-color: #fbab2e;
+  padding: 0.375rem 1rem;
+  color: #ffffff;
+  text-align: left;
+  display: inline;
+}
+
+.info-box p {
+  color: #2b323b;
+  text-align: left;
+  font-size: 1.25rem;
+  margin-top: 20px;
+}
+
+.style-elementP {
+  margin-bottom: 2.5rem;
+}
+
+/* ====================== Organization Section ====================== */
+.organization-section {
+  background: url("/resources/images/bg_elipse.svg") no-repeat center center;
+  background-size: cover;
+  padding: 140px 0px 120px 0px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.organization-section h1 {
+  font-size: 3rem;
+  color: #2b323b;
+  margin-bottom: 3.75rem;
+}
+
+.container-organization-section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-organization-section img {
+  display: block;
+  width: 1604px;
+  height: auto;
+  padding: 0px 96px;
+}
+
+/* ====================== Seven Cores ====================== */
+.container-seven-cores {
+  width: 100%;
+}
+
+.container-body {
+  text-align: center;
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 7.5rem 0;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 4rem;
+}
+
+.grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.grid:last-child {
+  margin-bottom: 0;
+}
+
+.grid.upper .card {
+  width: 24.5rem; /* 392px converted to rem */
+}
+
+.grid.lower .card {
+  width: 18rem; /* 288px converted to rem */
+}
+
+.card {
+  background-color: #ee1b240a;
+  border: 0.0625rem solid #ee1b2433;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  text-align: left;
+  position: relative;
+}
+
+.card-number {
+  position: absolute;
+  top: -1rem;
+  left: 1.25rem;
+  background-color: #ee1b24;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  font-size: 1.25rem;
+  color: #2b323b;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.card ul {
+  padding: 0 1.25rem;
+}
+
+.card ul li {
+  margin: 0.5rem 0;
+  font-size: 0.95rem;
+  color: #2b323bb2;
+}
+
+/* ====================== Vision, Mission, Values Section ====================== */
+.values-section {
+  padding: 6.25rem 21.75rem;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.values-section img {
+  margin-bottom: 1rem;
+}
+
+.values-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.line {
+  width: 1px;
+  background-color: #ccc;
+  height: 14rem;
+  flex-grow: 1;
+  margin: 0 2rem;
+}
+
+.value-item {
+  width: 30%;
+}
+
+.value-item:last-child {
+  border-right: none;
+}
+
+.value-item h3 {
+  font-size: 2.25rem;
+  color: #2b323bb2;
+}
+
+.value-item p {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  color: #2b323b;
+}
+
+/* ====================== Responsive Styles ====================== */
+@media (max-width: 1200px) {
+  /* INFO SECTION */
+  .info-section {
+    padding: 5rem 2rem;
+  }
+
+  /* Seven Cores */
+  .container-body {
+    text-align: center;
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+  }
+
+  /* Vision, Mission, Values Section */
+  .values-section {
+    padding: 6.25rem 2rem !important;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .grid {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .grid .card {
+    width: 100%;
+    max-width: 24.5rem;
+  }
+
+  .grid:last-child .card {
+    margin-bottom: 0;
+  }
+
+  .grid.lower .card {
+    width: 24.5rem;
+  }
+
+  /* INFO SECTION */
+  .info-section {
+    display: flex;
+    justify-content: center;
+    padding: 5rem 2rem;
+  }
+
+  /* VISION MISSION, VALUES SECTION */
+  .values-section {
+    padding: 3.125rem 2rem !important;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+
+  .values-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .line {
+    display: none;
+  }
+
+  .value-item h3 {
+    font-size: 1.5rem !important;
+    color: #2b323bb2;
+  }
+
+  .value-item p {
+    margin-top: 1rem;
+    font-size: 1.25rem !important;
+    color: #2b323b;
+  }
+
+  .about-section {
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 74px 0px 142px 0px;
+    position: relative;
+    clip-path: ellipse(100% 160% at 50% -60%);
+  }
+
+  .container-organization-section img {
+    max-width: 130%;
+    height: auto;
+  }
+
+  .organization-section {
+    background: url("/resources/images/bg_elipse.svg") no-repeat center center;
+    background-size: cover;
+    padding: 0px;
+    min-height: 60vh;
+  }
+
+  .organization-section h1 {
+    font-size: 2.5rem;
+    color: #2b323b;
+    margin-bottom: 3rem;
+  }
+
+  .container-organization-section {
+    max-width: auto;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  /* INFO SECTION */
+  .info-section {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 2rem 0rem 2rem;
+  }
+
+  .info-box {
+    width: auto;
+    margin-bottom: 2.5rem;
+  }
+
+  .info-box p {
+    color: #2b323b;
+    font-size: 1.25rem;
+    margin-top: 0.5rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    width: 100%;
+  }
+
+  /* Vision, Mission, Values Section */
+  .values-section {
+    padding: 2rem 0rem !important;
+  }
+
+  .values-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .value-item {
+    margin-bottom: 1.5rem !important;
+    width: calc(100% - 4rem) !important;
+    margin: 0 2rem 1.5rem 2rem !important;
+  }
+
+  .value-item h3 {
+    font-size: 1.75rem !important;
+  }
+
+  .value-item p {
+    font-size: 1rem;
+    margin-top: 0rem !important;
+  }
+
+  .values-section img {
+    margin-bottom: 0rem !important;
+  }
+
+  .container-organization-section img {
+    max-width: 160%;
+    height: auto;
+  }
+
+  .organization-section {
+    background: url("/resources/images/bg_elipse.svg") no-repeat center center;
+    background-size: cover;
+    padding: 0px;
+    min-height: 40vh;
+  }
+
+  .organization-section h1 {
+    font-size: 2rem;
+    color: #2b323b;
+    margin-bottom: 1rem;
+  }
+
+  .container-organization-section {
+    max-width: auto;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

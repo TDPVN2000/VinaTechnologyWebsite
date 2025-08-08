@@ -1,0 +1,151 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body,
+html {
+  font-family: "Nexa";
+  line-height: 1.6;
+  background-color: white;
+  text-rendering: optimizeLegibility;
+  height: 100%;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.custom-header-contact {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* ====================== CONTACT-US ====================== */
+.contact-us {
+  text-align: center;
+}
+
+.contact-us h1 {
+  margin-bottom: 2rem;
+  margin-top: 4rem;
+  color: #2b323b;
+  font-size: 3rem;
+}
+
+/* ====================== CONTACT INFO ====================== */
+.contact-info {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 5rem;
+}
+
+/* ====================== CONTACT CARD ====================== */
+.contact-card {
+  background-color: #ee1b240a;
+  padding: 2.5rem;
+  border-radius: 0.75rem;
+  width: 37.5rem;
+  text-align: left;
+  border: 1px solid #ee1b2433;
+  flex-shrink: 0;
+}
+
+.contact-info {
+  align-items: stretch;
+}
+
+.contact-card p {
+  font-size: 1rem;
+  color: #2b323b;
+}
+
+.contact-card h2 {
+  margin-bottom: 10px;
+  color: #ee1b24;
+}
+
+.introduce-boss {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.introduce-boss p {
+  font-size: 1.125rem;
+  color: #2b323b80;
+}
+
+.container p {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.container p:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+/* ====================== WRAPPER ====================== */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ====================== Responsive Styles ====================== */
+@media (max-width: 1200px) {
+  .container {
+    width: 90%;
+  }
+
+  .contact-card {
+    width: 100%;
+  }
+
+  .contact-info {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-us h1 {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+  }
+
+  .contact-card {
+    padding: 1.5rem;
+  }
+
+  .introduce-boss p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-us h1 {
+    font-size: 2rem;
+  }
+
+  .contact-card {
+    padding: 1rem;
+  }
+
+  .introduce-boss p {
+    font-size: 0.9rem;
+  }
+}

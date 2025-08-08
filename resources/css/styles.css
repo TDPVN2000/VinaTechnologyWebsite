@@ -173,12 +173,19 @@ html {
 
 .product-gallery {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
 }
 
+.product-gallery p {
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin-top: 2rem;
+}
+
 .product-gallery img {
-  margin-top: 2.5rem;
+  margin-top: 1.5rem;
 }
 
 /* ====================== Vision, Mission, Values Section ====================== */
