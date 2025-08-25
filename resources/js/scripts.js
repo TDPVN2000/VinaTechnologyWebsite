@@ -4,6 +4,10 @@ document.addEventListener("DOMContentLoaded", function () {
   const savedLanguage = localStorage.getItem("language") || "en";
   changeLanguageI18n(savedLanguage);
 
+  setTimeout(() => {
+    restoreCertificateImages();
+  }, 100);
+
   const menuItems = document.querySelectorAll(".menu-item");
   const currentMenu = localStorage.getItem("activeMenu") || "/";
 
@@ -56,6 +60,7 @@ function initI18next() {
         if (typeof updateHeaderContent === "function") {
           updateHeaderContent();
         }
+        restoreCertificateImages();
       }
     );
   });
@@ -89,6 +94,25 @@ function changeLanguageI18n(lang) {
         : "/resources/images/field_of_operation.svg";
 
     localStorage.setItem("operationImage", operationImage.src);
+  }
+
+  const certificate1Img = document.getElementById("certificate1-img");
+  const certificate2Img = document.getElementById("certificate2-img");
+
+  if (certificate1Img) {
+    certificate1Img.src =
+      lang === "vn"
+        ? "/resources/images/certificate1_vn.jpg"
+        : "/resources/images/certificate1_en.jpg";
+    localStorage.setItem("certificate1Image", certificate1Img.src);
+  }
+
+  if (certificate2Img) {
+    certificate2Img.src =
+      lang === "vn"
+        ? "/resources/images/certificate2_vn.jpg"
+        : "/resources/images/certificate2_en.jpg";
+    localStorage.setItem("certificate2Image", certificate2Img.src);
   }
 
   i18next.changeLanguage(lang, () => {
@@ -128,5 +152,35 @@ function toggleDrawer() {
   } else {
     drawer.classList.add("open");
     overlay.style.display = "block";
+  }
+}
+
+function restoreCertificateImages() {
+  const savedLanguage = localStorage.getItem("language") || "en";
+  const certificate1Img = document.getElementById("certificate1-img");
+  const certificate2Img = document.getElementById("certificate2-img");
+
+  if (certificate1Img) {
+    const savedCertificate1Image = localStorage.getItem("certificate1Image");
+    if (savedCertificate1Image) {
+      certificate1Img.src = savedCertificate1Image;
+    } else {
+      certificate1Img.src =
+        savedLanguage === "vn"
+          ? "/resources/images/certificate1_vn.jpg"
+          : "/resources/images/certificate1_en.jpg";
+    }
+  }
+
+  if (certificate2Img) {
+    const savedCertificate2Image = localStorage.getItem("certificate2Image");
+    if (savedCertificate2Image) {
+      certificate2Img.src = savedCertificate2Image;
+    } else {
+      certificate2Img.src =
+        savedLanguage === "vn"
+          ? "/resources/images/certificate2_vn.jpg"
+          : "/resources/images/certificate2_en.jpg";
+    }
   }
 }
