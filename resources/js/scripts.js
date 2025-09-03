@@ -80,11 +80,13 @@ function changeLanguageI18n(lang) {
   localStorage.setItem("language", lang);
 
   const flagImage = document.querySelector(".current-flag img");
-  flagImage.src =
-    lang === "vn"
-      ? "/resources/images/ic_vn.svg"
-      : "/resources/images/ic_en.svg";
-  localStorage.setItem("flagImage", flagImage.src);
+  if (flagImage) {
+    flagImage.src =
+      lang === "vn"
+        ? "/resources/images/ic_vn.svg"
+        : "/resources/images/ic_en.svg";
+    localStorage.setItem("flagImage", flagImage.src);
+  }
 
   const operationImage = document.getElementById("operation-image");
   if (operationImage) {
@@ -96,24 +98,30 @@ function changeLanguageI18n(lang) {
     localStorage.setItem("operationImage", operationImage.src);
   }
 
-  const certificate1Img = document.getElementById("certificate1-img");
-  const certificate2Img = document.getElementById("certificate2-img");
+  setTimeout(() => {
+    const certificate1Img = document.getElementById("certificate1-img");
+    const certificate2Img = document.getElementById("certificate2-img");
 
-  if (certificate1Img) {
-    certificate1Img.src =
-      lang === "vn"
+    if (certificate1Img) {
+      const newSrc1 = lang === "vn"
         ? "/resources/images/certificate1_vn.jpg"
         : "/resources/images/certificate1_en.jpg";
-    localStorage.setItem("certificate1Image", certificate1Img.src);
-  }
+      certificate1Img.src = newSrc1;
+      localStorage.setItem("certificate1Image", newSrc1);
+    } else {
+      console.log("certificate1-img element not found!");
+    }
 
-  if (certificate2Img) {
-    certificate2Img.src =
-      lang === "vn"
+    if (certificate2Img) {
+      const newSrc2 = lang === "vn"
         ? "/resources/images/certificate2_vn.jpg"
         : "/resources/images/certificate2_en.jpg";
-    localStorage.setItem("certificate2Image", certificate2Img.src);
-  }
+      certificate2Img.src = newSrc2;
+      localStorage.setItem("certificate2Image", newSrc2);
+    } else {
+      console.log("certificate2-img element not found!");
+    }
+  }, 100);
 
   i18next.changeLanguage(lang, () => {
     updateContent();
